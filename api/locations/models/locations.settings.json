@@ -17,6 +17,22 @@
     },
     "Direction": {
       "type": "string"
+    },
+    "ad": {
+      "via": "location",
+      "model": "ads"
+    },
+    "Image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
     }
   }
 }

@@ -62,6 +62,45 @@
     "team": {
       "via": "Players",
       "model": "teams"
+    },
+    "ad": {
+      "via": "user",
+      "model": "ads"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "height": {
+      "type": "integer"
+    },
+    "weigth": {
+      "type": "integer"
+    },
+    "favoriteSports": {
+      "collection": "sports",
+      "via": "user"
+    },
+    "nationality": {
+      "type": "string"
+    },
+    "isAdmin": {
+      "type": "boolean",
+      "default": false
+    },
+    "cityResidence": {
+      "type": "string"
+    },
+    "age": {
+      "type": "integer"
     }
   }
 }

@@ -33,9 +33,9 @@
       "model": "sports"
     },
     "Players": {
+      "via": "team",
       "plugin": "users-permissions",
-      "collection": "user",
-      "via": "team"
+      "collection": "user"
     }
   }
 }

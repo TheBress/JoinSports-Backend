@@ -28,6 +28,15 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
+    },
+    "ad": {
+      "via": "sport",
+      "model": "ads"
+    },
+    "user": {
+      "via": "favoriteSports",
+      "plugin": "users-permissions",
+      "model": "user"
     }
   }
 }

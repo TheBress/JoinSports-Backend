@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "ads",
   "info": {
-    "name": "Ads"
+    "name": "Ads",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -13,6 +14,41 @@
   "attributes": {
     "Name": {
       "type": "string"
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "user": {
+      "via": "ad",
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "sport": {
+      "model": "sports",
+      "via": "ad"
+    },
+    "Date": {
+      "type": "datetime"
+    },
+    "Image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "location": {
+      "via": "ad",
+      "model": "locations"
+    },
+    "request": {
+      "via": "ads",
+      "model": "requests"
     }
   }
 }
