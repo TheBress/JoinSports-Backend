@@ -19,36 +19,32 @@
       "type": "richtext"
     },
     "user": {
-      "via": "ad",
+      "via": "ads",
       "plugin": "users-permissions",
       "model": "user"
     },
     "sport": {
       "model": "sports",
-      "via": "ad"
+      "via": "ads"
+    },
+    "requests": {
+      "collection": "requests",
+      "via": "ads",
+      "dominant": true
     },
     "Date": {
-      "type": "datetime"
-    },
-    "Image": {
-      "collection": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": false,
-      "pluginOptions": {}
+      "type": "string"
     },
     "location": {
-      "via": "ad",
-      "model": "locations"
+      "model": "locations",
+      "via": "ads"
     },
-    "request": {
-      "via": "ads",
-      "model": "requests"
+    "image": {
+      "type": "string"
+    },
+    "views": {
+      "type": "integer",
+      "default": 0
     }
   }
 }

@@ -29,14 +29,14 @@
       "required": false,
       "pluginOptions": {}
     },
-    "ad": {
-      "via": "sport",
-      "model": "ads"
-    },
-    "user": {
+    "users": {
       "via": "favoriteSports",
       "plugin": "users-permissions",
-      "model": "user"
+      "collection": "user"
+    },
+    "ads": {
+      "via": "sport",
+      "collection": "ads"
     }
   }
 }

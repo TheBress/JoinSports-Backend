@@ -63,22 +63,6 @@
       "via": "Players",
       "model": "teams"
     },
-    "ad": {
-      "via": "user",
-      "model": "ads"
-    },
-    "image": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": false,
-      "pluginOptions": {}
-    },
     "height": {
       "type": "integer"
     },
@@ -87,7 +71,8 @@
     },
     "favoriteSports": {
       "collection": "sports",
-      "via": "user"
+      "via": "users",
+      "dominant": true
     },
     "nationality": {
       "type": "string"
@@ -99,8 +84,22 @@
     "cityResidence": {
       "type": "string"
     },
-    "age": {
-      "type": "integer"
+    "ads": {
+      "via": "user",
+      "collection": "ads"
+    },
+    "image": {
+      "type": "string"
+    },
+    "birthDate": {
+      "type": "string"
+    },
+    "events_calendars": {
+      "via": "user",
+      "collection": "events-calendar"
+    },
+    "description": {
+      "type": "richtext"
     }
   }
 }

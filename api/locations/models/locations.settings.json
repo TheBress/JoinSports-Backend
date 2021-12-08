@@ -18,10 +18,6 @@
     "Direction": {
       "type": "string"
     },
-    "ad": {
-      "via": "location",
-      "model": "ads"
-    },
     "Image": {
       "collection": "file",
       "via": "related",
@@ -33,6 +29,10 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
+    },
+    "ads": {
+      "via": "location",
+      "collection": "ads"
     }
   }
 }

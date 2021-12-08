@@ -15,8 +15,8 @@
       "type": "richtext"
     },
     "ads": {
-      "collection": "ads",
-      "via": "request"
+      "via": "requests",
+      "collection": "ads"
     }
   }
 }
