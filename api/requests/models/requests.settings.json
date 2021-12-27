@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "requests",
   "info": {
-    "name": "Requests"
+    "name": "Requests",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -11,12 +12,14 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "message": {
-      "type": "richtext"
+    "ad": {
+      "model": "ads",
+      "via": "requests"
     },
-    "ads": {
-      "via": "requests",
-      "collection": "ads"
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "requests"
     }
   }
 }

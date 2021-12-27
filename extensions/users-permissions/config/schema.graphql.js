@@ -12,7 +12,7 @@ module.exports = {
         resolver: "plugins::users-permissions.user.me",
       },
       user: true,
-      users: false,
+      users: true,
       usersConnection: false,
       role: false,
       roles: false,

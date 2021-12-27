@@ -27,11 +27,6 @@
       "model": "sports",
       "via": "ads"
     },
-    "requests": {
-      "collection": "requests",
-      "via": "ads",
-      "dominant": true
-    },
     "Date": {
       "type": "string"
     },
@@ -45,6 +40,14 @@
     "views": {
       "type": "integer",
       "default": 0
+    },
+    "requests": {
+      "via": "ad",
+      "collection": "requests"
+    },
+    "notifications": {
+      "via": "ad",
+      "collection": "notifications"
     }
   }
 }
