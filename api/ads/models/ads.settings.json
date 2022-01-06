@@ -24,8 +24,8 @@
       "model": "user"
     },
     "sport": {
-      "model": "sports",
-      "via": "ads"
+      "via": "ads",
+      "model": "sports"
     },
     "Date": {
       "type": "string"

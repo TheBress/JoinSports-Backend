@@ -70,8 +70,8 @@
       "type": "integer"
     },
     "favoriteSports": {
-      "collection": "sports",
       "via": "users",
+      "collection": "sports",
       "dominant": true
     },
     "nationality": {
@@ -112,6 +112,9 @@
     "notifications2": {
       "via": "userReceptor",
       "collection": "notifications"
+    },
+    "sex": {
+      "type": "string"
     }
   }
 }

@@ -17,9 +17,13 @@
       "via": "requests"
     },
     "user": {
+      "via": "requests",
       "plugin": "users-permissions",
-      "model": "user",
-      "via": "requests"
+      "model": "user"
+    },
+    "isAccepted": {
+      "type": "boolean",
+      "default": false
     }
   }
 }

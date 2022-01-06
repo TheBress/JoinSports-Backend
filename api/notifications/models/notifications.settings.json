@@ -16,14 +16,14 @@
       "type": "richtext"
     },
     "userTransmitter": {
+      "via": "notifications",
       "plugin": "users-permissions",
-      "model": "user",
-      "via": "notifications"
+      "model": "user"
     },
     "userReceptor": {
+      "via": "notifications2",
       "plugin": "users-permissions",
-      "model": "user",
-      "via": "notifications2"
+      "model": "user"
     },
     "ad": {
       "model": "ads",
