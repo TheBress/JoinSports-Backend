@@ -31,8 +31,8 @@
       "type": "string"
     },
     "location": {
-      "model": "locations",
-      "via": "ads"
+      "via": "ads",
+      "model": "locations"
     },
     "image": {
       "type": "string"

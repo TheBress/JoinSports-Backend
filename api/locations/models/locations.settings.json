@@ -18,18 +18,6 @@
     "Direction": {
       "type": "string"
     },
-    "Image": {
-      "collection": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": false,
-      "pluginOptions": {}
-    },
     "ads": {
       "via": "location",
       "collection": "ads"

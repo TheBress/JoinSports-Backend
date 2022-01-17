@@ -59,10 +59,6 @@
       "plugin": "users-permissions",
       "configurable": false
     },
-    "team": {
-      "via": "Players",
-      "model": "teams"
-    },
     "height": {
       "type": "integer"
     },
@@ -76,10 +72,6 @@
     },
     "nationality": {
       "type": "string"
-    },
-    "isAdmin": {
-      "type": "boolean",
-      "default": false
     },
     "cityResidence": {
       "type": "string"
